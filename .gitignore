@@ -1,0 +1,9 @@
+bin
+obj
+*.suo
+*.user
+_Resharper.*
+packages/
+*.map
+BeneficentCare/packages/
+BeneficentCare.Web/packages/
