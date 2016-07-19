@@ -7,3 +7,4 @@ packages/
 *.map
 BeneficentCare/packages/
 BeneficentCare.Web/packages/
+BeneficentCare.Web/Scripts/
