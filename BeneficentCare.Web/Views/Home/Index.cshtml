@@ -1,127 +1,73 @@
 ﻿@using System.Web.Optimization
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="beneficentCare">
 <head>
-    <title>Boom Shakalaka</title>
+    <title>Beneficent Care at Home</title>
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     @Styles.Render(
         "~/Content/css")
-    <style>
-        .container {
-            
-        }
-
-        .customColumn {
-            min-height: 300px;
-            text-align: center;
-            background-color: silver;
-        }
-
-        .test {
-            text-align: left;
-            background-color: white;
-            padding-left: 30px;
-            padding-right: 20px;
-            font-family: "Times New Roman";
-        }
-        .wrapper {
-            background-color: #ffdead;
-        }
-
-        .navbar-site {
-            background-color: #a0522d;
-        }
-
-        .a-nav {
-            color: whitesmoke;
-        }
-    </style>
+    <base href="/" />
 </head>
 <body>
 <div class="wrapper">
-    <div class="container">
-        <div class="row">
-            <ul class="nav nav-pills nav-justified navbar-site">
-                <li><a href="#" class="a-nav">Home</a></li>
-                <li><a href="#" class="a-nav">Register</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Home Care Services</a></li>
-                        <li><a href="#">Companion Care</a></li>
-                        <li><a href="#">Personal Care</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class="a-nav">Contact Us</a></li>
-                <li><a href="#" class="a-nav">Careers</a></li>
-            </ul>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <img class="img-responsive center-block" src="~/Media/Images/granny.jpg"/>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-8">
-                <div class="test">
-                    <h1 style="color: #a0522d">Home Services</h1>
-                    <p>
-                        With Beneficent Care At Home as your home care services provider, you will enjoy personalized built around your needs. We know you
-                        have a lot of questions about home care services for your elderly loved ones. The team of dedicated professionals at your local Beneficent Care At Home
-                        office is on hand to answer all your questions and to address any concerns you have. You can call your local Beneficent Care At Home office at any time to learn
-                        about our in home care services.
-                    </p>
-                    <p>
-                        When you choose Beneficent Care At Home as your home care provider, we begin by reviewing your loved one's needs. We will meet with involved family
-                        members and, when necessary, consult with the physician(s) of the care recipient, social workers, hospitals, or nursing home staff. Our goal is to get a complete picture
-                        of your loved one's in-home care needs.
-                    </p>
-                    <p>
-                        Our franchised agencies are trained to work with your family to develop an individualized home care services program. As part of this process, we match your loved one's needs
-                        to a select group of compassionate in home care providers. With Beneficent Car At Home as your in home care provider, you are planned to be part of the caregiver selection process.
-                    </p>
-                    <p>
-                        Some of the services provided include:
-
-                        <ul type="circle">
-                            <li>Bathing Assistance*</li>
-                            <li>Dressing Assistance*</li>
-                            <li>Walking Assistance*</li>
-                            <li>Meal Preparation/Diet Monitoring</li>
-                            <li>Light Housekeeping</li>
-                            <li>Errands and Shopping</li>
-                            <li>Medication Reminders</li>
-                            <li>Joyful Companionship</li>
-                            <li>Respite Care for Family Caregivers</li>
-                            <li>Care is Available Mornings, Mid-Day and Evenings</li>
-                            <li>Temporary or Long Term Care is Available</li>
-                            <li>Weekend and Holiday Care is Available</li>
-                            <li>24 Hours Care Available</li>
-                            <li><a href="#">More About Us</a></li>
-                        </ul>
-                    </p>
+    <header>
+        <div id="navigationBar">
+            <div id="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="glyphicon glyphicon-check"></span> Call for more information: 480-628-1451
+                        </div>
+                        <div class="col-md-4">
+                            <span class="glyphicon glyphicon-check"></span> Mon-Fri: 8:00AM - 5:00PM
+                        </div>
+                        <div class="col-md-4">
+                            <span class="glyphicon glyphicon-calendar"></span> Make an appointment
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <h3>Services</h3>
-                <ul class="list-group-item-heading">
-                    <li class="list-group-item">Personal Care</li>
-                    <li class="list-group-item">Home Care Services</li>
-                    <li class="list-group-item alert-success">Companion Care</li>
-                </ul>
+            <div class="container">
+                <div class="row top-buffer">
+                    <div class="col-md-6">
+                        <div style="background: url('/Media/Images/logo.png'); background-repeat: no-repeat; width: 100px; height: 100px; background-size: 100px 100px;">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav nav-pills nav-justified">
+                            <li><a href="#/home" class="a-nav">Home</a></li>
+                            <li><a href="#/about" class="a-nav">About Us</a></li>
+                            <li class="dropdown">
+                                <a href="#/services" class="dropdown-button" href='#' data-activates='dropdown1'>Services <b class="caret"></b></a>
+                                <ul id="dropdown1" class="dropdown-content">
+                                    <li><a href="#/services/0">Home Care Services</a></li>
+                                    <li><a href="#/services/1">Companion Care</a></li>
+                                    <li><a href="#/services/2">Personal Care</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="a-nav">Register Now</a></li>
+                            <li><a href="#/careers" class="a-nav">Careers</a></li>
+                            <li><a href="#/contactus" class="a-nav">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>>
+    </header>
 
+    <div class="panel-body">
+        <div class="main" ng-view ng-animate></div>
+    </div>
 </div>
 
-
-    @Scripts.Render(
-        "~/bundles/jquery")
+    @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/angularJS")
+    @Scripts.Render("~/bundles/materialize")
+    @Scripts.Render("~/bundles/lodash")
+    @Scripts.Render("~/bundles/angularjs")
+    @Scripts.Render("~/siteJS")
+    @Scripts.Render("~/controllers")
+    @Scripts.Render("~/services")
 </body>
 </html>

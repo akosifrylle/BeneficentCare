@@ -1,0 +1,60 @@
+﻿<div class="container-fluid content-title-wrapper">
+    <div class="row">
+        <div class="container">
+            <div class="col-md-12 content-title top-buffer">
+                <h3>Services</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container top-buffer">
+    <div class="row">
+        <div class="col-md-3">
+            <div ng-repeat="service in serviceCtrl.services">
+                <div class="col-md-12 service-wrapper" ng-click="serviceCtrl.serviceOnClick(service.id)">{{service.name}}</div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <h5><b>Home Care Services</b></h5>
+            <p>
+                The most important aspect of maintaining good health is good personal hygiene. We make grooming part
+                of the daily schedule of activities. The person’s preferred personal care routine is incorporated
+                wherever possible and practical.
+            </p>
+
+            <p>
+                Feeling good also means looking good and BCH Team strive to help every client handle those grooming and
+                personal hygiene.
+            </p>
+
+            <p>
+                Assistance with activities of daily living include:
+            </p>
+
+            <ul class="browser-default">
+                <li>Bathing/Showering</li>
+                <li>Dressing</li>
+                <li>Walking Assistannce</li>
+                <li>Meal Preparation/Diet Monitoring</li>
+                <li>Light Housekeeping</li>
+                <li>Errands and Shopping</li>
+                <li>Medication Reminders</li>
+                <li>Grooming</li>
+                <li>Toilet Assistance</li>
+                <li>Incontinent Care</li>
+                <li>Joyful Companionship</li>
+                <li>Respite Care</li>
+                <li>Temporary or Long Term Care is Available</li>
+                <li>Weekends and Holiday Care is Available</li>
+                <li>24 Hour Care Available</li>
+            </ul>
+
+            <p>
+                Take advantage of our <a href="#">Free Consulation Form</a>, and let our experts help you determine the right services for you.
+                For further inquiries, don’t hesitate to give us a call at <b>480-295-4687</b>. You may also send us a message through our Contact Us page.
+            </p>
+        </div>
+    </div>
+</div>

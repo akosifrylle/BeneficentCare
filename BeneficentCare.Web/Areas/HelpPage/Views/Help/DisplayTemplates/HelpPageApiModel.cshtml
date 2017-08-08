@@ -13,10 +13,10 @@
 
     <h2>Request Information</h2>
 
-    <h3>URI Parameters</h3>
+    <h5>URI Parameters</h5>
     @Html.DisplayFor(m => m.UriParameters, "Parameters")
 
-    <h3>Body Parameters</h3>
+    <h5>Body Parameters</h5>
 
     <p>@Model.RequestDocumentation</p>
 
@@ -35,13 +35,13 @@
 
     @if (Model.SampleRequests.Count > 0)
     {
-        <h3>Request Formats</h3>
+        <h5>Request Formats</h5>
         @Html.DisplayFor(m => m.SampleRequests, "Samples")
     }
 
     <h2>Response Information</h2>
 
-    <h3>Resource Description</h3>
+    <h5>Resource Description</h5>
 
     <p>@description.ResponseDescription.Documentation</p>
 
@@ -60,7 +60,7 @@
 
     @if (Model.SampleResponses.Count > 0)
     {
-        <h3>Response Formats</h3>
+        <h5>Response Formats</h5>
         @Html.DisplayFor(m => m.SampleResponses, "Samples")
     }
 

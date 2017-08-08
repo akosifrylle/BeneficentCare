@@ -1,0 +1,42 @@
+﻿<div class="container-fluid content-title-wrapper">
+    <div class="row">
+        <div class="container">
+            <div class="col-md-12 content-title top-buffer">
+                <h3>Services</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container top-buffer">
+    <div class="row">
+        <div class="col-md-3">
+            <div ng-repeat="service in serviceCtrl.services">
+                <div class="col-md-12 service-wrapper" ng-click="serviceCtrl.serviceOnClick(service.id)">{{service.name}}</div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <h5><b>Personal Care</b></h5>
+
+            <p>
+                Beneficent Care at Home is a local family owned and operated business that specializes
+                in providing care and to help individuals maintain a familiar lifestyle in the comfort
+                of their home.
+            </p>
+
+            <p>
+                The main purpose is to provide our clients with the assurance that someone will provide
+                companionship for a greater part of the everyday and night to prevent accidents from happening
+                and to assist with daily activities.    
+            </p>
+
+            <p>
+                We choose to make a positive difference in the aging experience. Beneficent Care at Home Team
+                will perform its collective duties with confidence, compassionate, commitment, cheerfulness and care.
+                We will treat every contact as a friend, every client as a family, and perform every task with
+                honor.
+            </p>
+        </div>
+    </div>
+</div>

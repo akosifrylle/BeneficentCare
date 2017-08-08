@@ -1,0 +1,50 @@
+﻿<div class="container-fluid content-title-wrapper">
+    <div class="row">
+        <div class="container">
+            <div class="col-md-12 content-title top-buffer">
+                <h3>Services</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container top-buffer">
+    <div class="row">
+        <div class="col-md-3">
+            <div ng-repeat="service in serviceCtrl.services">
+                <div class="col-md-12 service-wrapper" ng-click="serviceCtrl.serviceOnClick(service.id)">{{service.name}}</div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <p>
+                We understand how challenging it can be when a family needs additional support to live independently.
+                Caring for your loved one alone can become demanding, as their needs change and increase. Beneficent team
+                is here to provide the additional support to provide the care, and respite for family at an affordable price.
+                We focused on creating personal relationships with our clients, families, caregivers, nurses and CNAs.
+                BCH Team is more than happy to assist you with whatever you need.
+            </p>
+            <p>
+                <img src="/Media/Images/Services/1.jpg" style="float: right; width: 300px; margin-left: 15px" />
+                <ul type="disc">
+                    <li>
+                        • Home Care Services
+                    </li>
+                    <li>
+                        • Companion Care
+                    </li>
+                    <li>
+                        • Personal Care
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Take a moment to browse our various services to see how we may be of assistance with caring for your loved one
+            </p>
+            <p>
+                Take advantage of our <a href="#">Free Consulation Form</a>, and let our experts help you determine the right services for you.
+                For further inquiries, don’t hesitate to give us a call at <b>480-628-1451</b>. You may also send us a message through our Contact Us page.
+            </p>
+        </div>
+    </div>
+</div>

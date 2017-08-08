@@ -1,0 +1,81 @@
+﻿<div class="container-fluid content-title-wrapper">
+    <div class="row">
+        <div class="container">
+            <div class="col-md-12 content-title top-buffer">
+                <h3>Careers</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color: #f0f8ff; padding: 20px 0px">
+    <div class="container" style="background-color: #ffffff">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-4">
+                <p><b>To apply at Beneficent Care At Home, please fill out the form below.</b></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div id="career-image">
+                </div>
+            </div>
+            <div class="col-md-8" style="background-color: #f5f5f5; padding: 0 15px">
+                <form name="contactUsFrm">
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="input-field col m6">
+                                <input id="firstname" type="text" class="validate control" required ng-model="customerCtrl.Customer.FirstName" />
+                                <label for="firstname">First Name</label>
+                            </div>
+                            <div class="input-field col m6">
+                                <input id="lastname" type="text" class="validate control" required ng-model="customerCtrl.Customer.LastName" />
+                                <label for="lastname">Last Name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="input-field col m6">
+                                <input id="email" type="email" class="validate control" required ng-model="customerCtrl.Customer.Email" />
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-field col m6">
+                                <input id="phone" type="tel" class="validate control" required ng-model="customerCtrl.Customer.ContactNumber" />
+                                <label for="phone">Contact Number</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="input-field col m6">
+                                <input id="position" type="text" class="validate control" required ng-model="" />
+                                <label for="position">Position Applying for</label>
+                            </div>
+                            <div class="input-field col m6">
+                                <input id="resume" type="file" class="validate btn btn-file" required ng-model="customerCtrl.Customer.Resume"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="input-field col-md-6">
+                                <button class="btn btn-primary" value="Contact Us" ng-disabled="contactUsFrm.$invalid" ng-click="customerCtrl.Contact()">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="success-modal" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <img src="/Media/Images/success-icon.png" />
+                            <h4>Thank You! {{customerCtrl.Customer.FirstName}}</h4>
+                            <p>We have received your assessment form. We will be in touch with you within 24 hours.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#/home" class="modal-action modal-close waves-effect waves-green btn-flat ">Return</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

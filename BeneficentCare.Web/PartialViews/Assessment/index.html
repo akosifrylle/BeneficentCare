@@ -1,0 +1,120 @@
+﻿<div class="container-fluid content-title-wrapper">
+    <div class="row">
+        <div class="container">
+            <div class="col-md-12 content-title top-buffer">
+                <h3>Contact Us</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="contactus-address">
+        <h4>Beneficent Care At Home</h4>
+        <p>Address 9459 East Pampa Mesa, Arizona 85212</p>
+        <p>Phone: <b>480-628-1451</b></p>
+        <p>Email: beneficentcare@gmail.com</p>
+    </div>  
+</div>
+
+
+<div class="container-fluid" style="background-color: #f0f8ff; padding: 20px 0px">
+    <div class="container" style="background-color: #ffffff">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Request a Consultation</h3>
+                <p style="font-size: 18px">We appreciate your interest in our company and look forward to working with you.</p>
+                <p style="font-size: 18px">For specific information on the services offered, call us today at <b>480-628-1451</b> or fill out the form below.</p>
+                <p style="font-size: 18px; font-weight: bold">We look forward to speaking with you.</p>
+
+                <div class="col-md-8" style="background-color: #f5f5f5; padding: 0 15px">
+                    <form name="contactUsFrm">
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="input-field col m6">
+                                    <input id="firstname" type="text" class="validate control" required ng-model="customerCtrl.Customer.FirstName" />
+                                    <label for="firstname">First Name</label>
+                                </div>
+                                <div class="input-field col m6">
+                                    <input id="lastname" type="text" class="validate control" required ng-model="customerCtrl.Customer.LastName" />
+                                    <label for="lastname">Last Name</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="input-field col m6">
+                                    <input id="email" type="email" class="validate control" required ng-model="customerCtrl.Customer.Email" />
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="input-field col m6">
+                                    <input id="phone" type="tel" class="validate control" required ng-model="customerCtrl.Customer.ContactNumber" />
+                                    <label for="phone">Contact Number</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="input-field col m6">
+                                    <select id="besttime" class="browser-default ng-empty validate control" name="besttime" required ng-model="customerCtrl.Customer.Time" ng-options="option for option in customerCtrl.TimeOptions">
+                                        <option value='' disabled selected>Best time to call</option>
+                                    </select>
+                                </div>
+                                <div class="input-field col m6">
+                                    <input id="time" type="text" class="validate control" required ng-model="customerCtrl.Customer.PreferredTime" />
+                                    <label for="time">Preferred Time</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="input-field col-md-6">
+                                    <textarea id="question" class="materialize-textarea validate control" rows="5" required ng-model="customerCtrl.Customer.Question"></textarea>
+                                    <label for="question" style="margin-left: 10px;">How can we help?</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="input-field col-md-6">
+                                    <button class="btn btn-primary" value="Contact Us" ng-disabled="contactUsFrm.$invalid" ng-click="customerCtrl.Contact()">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="success-modal" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <img src="/Media/Images/success-icon.png"/>
+                                <h4>Thank You! {{customerCtrl.Customer.FirstName}}</h4>
+                                <p>We have received your assessment form. We will be in touch with you within 24 hours.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#/home" class="modal-action modal-close waves-effect waves-green btn-flat ">Return</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4" style="margin: 0 auto; text-align: center;">
+                    <div class="row">
+                        <div id="contact-image"></div>
+                    </div>
+                    <div class="row">
+                        <button id="download-brochure"></button>
+                        <button id="download-bussinesscard"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--<div class="col-md-6">
+            <form method="post" action="#" class="form-horizontal">
+                <input type="text" class="form-control" placeholder="Your name" />
+                <input type="text" class="form-control" placeholder="Your email" />
+                <input type="text" class="form-control" placeholder="Subject" />
+                <textarea class="form-control" rows="3"></textarea>
+            </form>
+        </div>
+    </div>
+</div>

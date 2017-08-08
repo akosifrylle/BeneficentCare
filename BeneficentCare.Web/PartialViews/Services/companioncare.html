@@ -1,0 +1,38 @@
+﻿<div class="container-fluid content-title-wrapper">
+    <div class="row">
+        <div class="container">
+            <div class="col-md-12 content-title top-buffer">
+                <h3>Services</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container top-buffer no-animate">
+    <div class="row">
+        <div class="col-md-3 no-animate">
+            <div ng-repeat="service in serviceCtrl.services">
+                <div class="col-md-12 service-wrapper" ng-click="serviceCtrl.serviceOnClick(service.id)">{{service.name}}</div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <h5><b>Companion Care</b></h5>
+            <p>
+                Whether you live across the country or across the street from your aging family members, it helps to know they have someone
+                nearby if they need support. Sometimes the right home care for your loved one is just having a friendly,
+                compassionate companion who visits regularly to sit, chat, and reminisce.
+            </p>
+
+            <p>
+                Companion Care includes companionship, meal preparation, light housekeeping,
+                and errands and shopping. If your family member, friend, or loved one enjoys their
+                independence but is struggling with everyday activities, companion care is the solution.
+                Beneficent Care     Services will manage their daily requirements with specialized elderly companion
+                care, matching their needs with the best available caregiver. If you choose to allow Beneficent Care
+                at Home to provide elderly companion care for your loved one, you'll know you've provided them with the
+                best possible care available.
+            </p>
+        </div>
+    </div>
+</div>
